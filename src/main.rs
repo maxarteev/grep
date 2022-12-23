@@ -17,7 +17,6 @@ fn grep(
         count: 0,
         value: vec![],
     };
-
     file.read_to_string(&mut text).expect("I can't read the file");
     for line in text.split_terminator(&['.', '!']) {
         for line_iter in line.split_whitespace() {
